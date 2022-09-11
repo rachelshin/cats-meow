@@ -1,0 +1,255 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+body{
+  width: 100%;
+  font-family: 'Berkshire Swash';
+}
+p{
+  font-family: 'Montserrat';
+  font-size: 1.7rem;
+  padding-top: 2rem;
+  line-height: 3rem;
+}
+.left, .right{
+  width: 50%;
+  float: left;
+}
+button{
+  font-family: "Montserrat";
+  margin-top: 3rem;
+  background-color: rgba(214,	0,	78, 0.3);
+  color: darkmagenta;
+  border: none;
+  /* border-radius: 2px; */
+  width: 130px;
+  height: 50px;
+  font-size: 1.75rem;
+}
+/******************************************
+/* SECTION ONE
+/*******************************************/
+#one{
+  background-image: url(assets/hero.jpg);
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: 50% 35%;
+  padding-left: 2.5%;
+}
+h1{
+  font-size: 8rem;
+  padding-top: 20%;
+  height: 50%;
+}
+#contact{
+  font-size: 3rem;
+  text-align: right; 
+  /* position: absolute;
+  top: 99%;
+  right: 5%; */ 
+  display: block;
+  /* border: 2px solid red; */
+  padding-right: 50px;
+  height: 50%;
+  padding-top: 18%;
+}
+/******************************************
+/* SECTION TWO
+/*******************************************/
+#two{
+  background-color: rgb(235	231	241	);
+  padding: 2% 15%;
+}
+h2{
+  font-size: 4rem;
+  letter-spacing: .2rem;
+  line-height: 5rem;
+}
+#oval{
+  border-radius: 100%;
+  height: 560px;
+  width: 275px;
+object-fit: cover;
+transform: rotate(15deg);
+}
+#two h2{
+  padding-top: 45%;
+}
+#two .right{
+  padding-left: 15%;
+}
+/******************************************
+/* SECTION THREE
+/*******************************************/
+#three{
+  background-color: rgb(60	38	59	);
+  color: white;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+h3{
+  font-size: 3rem;
+  padding-top: 3rem;
+}
+h4{
+  font-family: 'Montserrat';
+  font-size: 2rem;
+  padding-top: 1.5rem;
+}
+/******************************************
+/* SECTION FOUR
+/*******************************************/
+#four{
+  width: 100%;
+  background-color: rgb(235	231	241	);
+  padding: 3%;
+}
+#owners{
+  width: 80%;
+}
+#four p{
+  font-family: "Berkshire Swash";
+  font-size: 3rem;
+  padding-top: 6%;
+  padding-right: 8%;
+  line-height: 5rem;
+}
+/******************************************
+/* SECTION FIVE
+/*******************************************/
+#wineBar{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+/******************************************
+/* SECTION SIX
+/*******************************************/
+#six{
+  width: 100%;
+  background-color: rgb(235	231	241	);
+  padding: 6%;
+  padding-left: 15%;
+  padding-bottom: 10%;
+}
+#wine{
+  width: 80%;
+}
+
+#six .right{
+  display: flex;
+  justify-content: center;
+}
+#six h3{
+  /* border: 2px solid red; */
+}
+#six p{
+  padding-top: 1rem;
+}
+i{
+  margin-top: 1.8rem;
+}
+/******************************************
+/* MEDIA QUERY
+/*******************************************/
+@media screen and (max-width:1025px){
+#two .left{
+  width: 100%;
+  height: 100%;
+}
+#two .right{
+  display: none;
+}
+#two h2{
+  padding: 3% 8%;
+  text-align: center;
+  font-size: 7rem;
+}
+#two{
+  padding: 3% 8%;
+}
+p{
+  font-size: 4rem;
+  line-height: 5.5rem;
+}
+button{
+  margin: 20px auto;
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  width: 300px;
+}
+h1{
+  font-size: 9rem;
+}
+span{
+  font-size: 4rem;
+}
+#contact{
+  padding-top: 15%;
+  padding-right: 20px;
+}
+h4{
+  font-size: 4rem;
+  padding-top: 5%;
+}
+#three p{
+  padding-bottom: 3%;
+}
+#four .left{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#four .right{
+  width: 100%;
+}
+#four .right p{
+  font-size: 5rem;
+  line-height: 8rem;
+}
+#four{
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+#five img{
+  height: 700px;
+}
+#wine{
+height: 500px;
+object-fit: cover;
+}
+#six .left p{
+  font-size: 4rem;
+}
+
+}
