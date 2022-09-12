@@ -35,10 +35,7 @@ p{
   padding-top: 2rem;
   line-height: 3rem;
 }
-.left, .right{
-  width: 50%;
-  float: left;
-}
+
 button{
   font-family: "Montserrat";
   margin-top: 3rem;
@@ -46,9 +43,9 @@ button{
   color: darkmagenta;
   border: none;
   /* border-radius: 2px; */
-  width: 130px;
-  height: 50px;
-  font-size: 1.75rem;
+  width: 160px;
+  height: 70px;
+  font-size: 2.3rem;
 }
 /******************************************
 /* SECTION ONE
@@ -87,7 +84,10 @@ h1{
 /*******************************************/
 #two{
   background-color: rgb(235	231	241	);
-  padding: 2% 15%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
 }
 h2{
   font-size: 4rem;
@@ -96,19 +96,33 @@ h2{
 }
 #oval{
   border-radius: 100%;
-  height: 560px;
-  width: 275px;
+  height: 120%;
+  width: 200px;
 object-fit: cover;
-transform: rotate(15deg);
+
+transform-origin: bottom right;
+transform: rotate(30deg);
+/* transform: skew(-15deg, 15deg); */
 }
-#two h2{
-  padding-top: 45%;
-}
+#two .left{
+  text-align: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+} 
 #two .right{
-  padding-left: 15%;
+  width: 40%;
+  /* padding-left: 5%; */
+}
+.right, .left{
+    /* border: 2px solid black;  */
+  
 }
 /******************************************
-/* SECTION THREE
+/* SECTION THREE - specials
 /*******************************************/
 #three{
   background-color: rgb(60	38	59	);
@@ -127,34 +141,48 @@ h4{
   padding-top: 1.5rem;
 }
 /******************************************
-/* SECTION FOUR
+/* SECTION FOUR - about
 /*******************************************/
 #four{
   width: 100%;
   background-color: rgb(235	231	241	);
   padding: 3%;
+  display: flex;
+  justify-content: space-evenly;
 }
 #owners{
-  width: 80%;
+  width: 100%;
 }
 #four p{
   font-family: "Berkshire Swash";
   font-size: 3rem;
-  padding-top: 6%;
-  padding-right: 8%;
+  
   line-height: 5rem;
 }
+#four .left{
+  width: 40%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+}
+#four .right{
+  width: 40%;
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /******************************************
-/* SECTION FIVE
+/* SECTION FIVE - wine bar image
 /*******************************************/
 #wineBar{
   width: 100%;
-  height: 350px;
+  height: 400px;
   object-fit: cover;
   object-position: 50% 20%;
 }
 /******************************************
-/* SECTION SIX
+/* SECTION SIX- footer
 /*******************************************/
 #six{
   width: 100%;
@@ -162,6 +190,7 @@ h4{
   padding: 6%;
   padding-left: 15%;
   padding-bottom: 10%;
+  display: flex;
 }
 #wine{
   width: 80%;
@@ -170,12 +199,23 @@ h4{
 #six .right{
   display: flex;
   justify-content: center;
+  width: 50%;
+}
+#six .left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 #six h3{
   /* border: 2px solid red; */
 }
 #six p{
   padding-top: 1rem;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  text-align: center;
 }
 i{
   margin-top: 1.8rem;
