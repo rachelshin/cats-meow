@@ -18,6 +18,13 @@
 .clear {
 clear: both;
 }
+/******************************************
+/* BORDERS
+/*******************************************/
+.right, .left{
+   border: 2px solid black; 
+
+}
 
 /******************************************
 /* BASE STYLES
@@ -58,33 +65,39 @@ button{
   width: 100%;
   background-position: 50% 35%;
   padding: 2.5%;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 h1{
   font-size: 8rem;
   margin-top: 15%;
   height: auto;
   border: 2px solid blue;
+  width: 100%;
+  
 }
 #contact{
   font-size: 3rem;
   text-align: right; 
-   position: absolute;
+   /* position: absolute;
   top: 90%;
-  right: 5%; 
-  
+  right: 2.5%;  */
+  align-self: flex-end;
   border: 2px solid red;
   
   height: auto;
   
-  width: auto;
+  width: 100%;
 }
 /******************************************
 /* SECTION TWO
 /*******************************************/
 #two{
   background-color: rgb(235	231	241	);
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
   justify-content: space-evenly;
   height: 500px;
@@ -96,8 +109,8 @@ h2{
 }
 #oval{
   border-radius: 100%;
-  height: 120%;
-  width: 200px;
+  height: 100%;
+  width: 40%;
 object-fit: cover;
 
 transform-origin: bottom right;
@@ -111,16 +124,17 @@ transform: rotate(30deg);
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 
 } 
 #two .right{
   width: 40%;
   /* padding-left: 5%; */
+  display: flex;
+  justify-content: flex-start;
 }
-.right, .left{
-    /* border: 2px solid black;  */
-  
-}
+
 /******************************************
 /* SECTION THREE - specials
 /*******************************************/
@@ -146,7 +160,8 @@ h4{
 #four{
   width: 100%;
   background-color: rgb(235	231	241	);
-  padding: 3%;
+ padding: 3%;
+ padding-right: 0;
   display: flex;
   justify-content: space-evenly;
 }
@@ -157,16 +172,16 @@ h4{
   font-family: "Berkshire Swash";
   font-size: 3rem;
   
-  line-height: 5rem;
+  line-height: 5.5rem;
 }
 #four .left{
-  width: 40%;
+  width: 45%;
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
 }
 #four .right{
-  width: 40%;
+  width: 45%;
   /* border: 2px solid blue; */
   display: flex;
   align-items: center;
@@ -194,6 +209,7 @@ h4{
 }
 #wine{
   width: 80%;
+  object-fit: cover;
 }
 
 #six .right{
@@ -220,10 +236,18 @@ h4{
 i{
   margin-top: 1.8rem;
 }
+
 /******************************************
 /* MEDIA QUERY
 /*******************************************/
-@media screen and (max-width:1025px){
+@media screen and (orientation:portrait) {
+  #two{
+    height: auto;
+  }
+#contact{
+  top:34%;
+}
+
 #two .left{
   width: 100%;
   height: 100%;
@@ -232,16 +256,26 @@ i{
   display: none;
 }
 #two h2{
-  padding: 3% 8%;
+  padding-right: 8%;
+  padding-left: 8%;
+  padding-bottom: 3%;
   text-align: center;
-  font-size: 7rem;
+  font-size: 6rem;
 }
 #two{
-  padding: 3% 8%;
+  padding: 3% 4.5%;
 }
-p{
+#two p{
   font-size: 4rem;
+  padding-bottom: 3%;
+  line-height: 6rem;
+}
+#three p{
+  font-size: 3rem;
   line-height: 5.5rem;
+}
+#three h2{
+  padding-bottom: 3%;
 }
 button{
   margin: 20px auto;
@@ -256,12 +290,12 @@ h1{
 span{
   font-size: 4rem;
 }
-#contact{
+/* #contact{
   padding-top: 15%;
   padding-right: 20px;
-}
+} */
 h4{
-  font-size: 4rem;
+  font-size: 3rem;
   padding-top: 5%;
 }
 #three p{
@@ -269,19 +303,25 @@ h4{
 }
 #four .left{
   width: 100%;
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 #four .right{
   width: 100%;
+  display: block;
 }
 #four .right p{
   font-size: 5rem;
-  line-height: 8rem;
+  line-height: 10rem;
+  width: 100%;
+  padding: 5%;
+  text-align: center;
+  padding-bottom: 9%;
+  padding-top: 9%;
 }
 #four{
-  padding-top: 8%;
-  padding-bottom: 8%;
+  border: 2px solid red;
+  padding: 0;
+  display: block;
 }
 
 #five img{
@@ -292,7 +332,32 @@ height: 500px;
 object-fit: cover;
 }
 #six .left p{
-  font-size: 4rem;
+  font-size: 3rem;
+}
+#six{
+  padding: 0;
+}
+#six .left{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#six .right{
+  display: flex;
+  align-items: center;
 }
 
+}
+@media screen and (min-width:900px) {
+  #three h4{
+    font-size: 5rem;
+  }
+  #three p{
+    font-size: 5rem;
+  }
+  #three h2{
+font-size: 6rem;
+  }
+  #three h3{
+font-size: 5rem;
+  }
 }
