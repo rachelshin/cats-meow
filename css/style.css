@@ -80,6 +80,7 @@ h1{
 }
 #contact{
   font-size: 3rem;
+  line-height: 5rem;
   text-align: right; 
    /* position: absolute;
   top: 90%;
@@ -154,6 +155,7 @@ h4{
   font-size: 2rem;
   padding-top: 1.5rem;
 }
+
 /******************************************
 /* SECTION FOUR - about
 /*******************************************/
@@ -242,17 +244,24 @@ i{
 /*******************************************/
 @media screen and (orientation:portrait) {
   #one{
-    padding: 5%;
-    padding-bottom: 1.5%;
+    padding: 4%;
+    padding-bottom: 2.5%;
   }
+  #contact{
+    top:34%;
+  }
+  h1{
+    font-size: 9rem;
+  }
+  span{
+    font-size: 4rem;
+  }
+
+
   #two{
     height: auto;
     
   }
-#contact{
-  top:34%;
-}
-
 #two .left{
   width: 100%;
   height: 100%;
@@ -276,13 +285,6 @@ i{
   padding-bottom: 3%;
   line-height: 6rem;
 }
-#three p{
-  font-size: 3rem;
-  line-height: 5.5rem;
-}
-#three h2{
-  padding-bottom: 3%;
-}
 button{
   margin: 20px auto;
   display: block;
@@ -291,23 +293,30 @@ button{
   width: 300px;
   height: 100px;
 }
-h1{
-  font-size: 9rem;
+
+#three{
+  padding: 7%;
 }
-span{
-  font-size: 4rem;
+#three p{
+  font-size: 3rem;
+  line-height: 5.5rem;
 }
-/* #contact{
-  padding-top: 15%;
-  padding-right: 20px;
-} */
+#three h2{
+  padding-bottom: 5%;
+}
 h4{
   font-size: 3rem;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 #three p{
   padding-bottom: 3%;
+
 }
+#three h3{
+  padding-top: 7%;
+}
+
+
 #four .left{
   width: 100%;
   display: block;
@@ -331,9 +340,12 @@ h4{
   display: block;
 }
 
+
 #five img{
   height: 700px;
 }
+
+
 #wine{
 height: 500px;
 object-fit: cover;
@@ -352,9 +364,22 @@ object-fit: cover;
   display: flex;
   align-items: center;
 }
+@media screen and (max-width:799px) and (orientation:portrait) {
+  #three p{
+    font-size: 3rem;
+    line-height: 5.5rem;
+  }
 
+  }
+  h4{
+    font-size: 3rem;
+    padding-top: 3%;
+  }
 }
-@media screen and (min-width:900px) {
+
+
+
+@media screen and (min-width:800px) and (orientation:portrait){
   #three h4{
     font-size: 5rem;
   }
